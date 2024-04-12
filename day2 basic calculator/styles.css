@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+.number--pad {
+  padding: 5px;
+}
+.clear {
+  background-color: peru;
+}
+
+.result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.number--pad,
+input,
+.calci {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.btn {
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 3rem;
+  height: 2rem;
+  margin: 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  border-color: aliceblue;
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  background-color: #ddd;
+}
+.divide,
+.multiply,
+.subtract,
+.add {
+  background-color: rgb(187, 195, 232);
+}
+
+body {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.number--pad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+.calci {
+  border-radius: 3px;
+  padding: 10px;
+}
+input {
+  height: 2rem;
+  border-radius: 3px;
+  border-color: rgb(240, 242, 243);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 15rem;
+}
+#equal {
+  background-color: grey;
+  grid-row: span 3;
+  width: auto;
+  height: auto;
+}
